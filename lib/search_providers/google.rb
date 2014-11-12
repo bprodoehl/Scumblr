@@ -67,7 +67,7 @@ class SearchProvider::Google < SearchProvider::Provider
 
     search = client.discovered_api('customsearch')
 
-    (1..100).step(100) do |offset|
+    (1..100).step(10) do |offset|
 
 
       # Make an API call using a reference to a discovered method.
